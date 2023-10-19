@@ -18,6 +18,8 @@ function search(){
 search();
 
 
+// O(1)
+
 function swap(a, b){
 
     console.log(`a: ${a}, b: ${b}`);
@@ -31,8 +33,16 @@ function swap(a, b){
 swap(100, 5);
 
 
+// 0(n)
 
+function f2(n){
+    //const c = 5;
 
+    for(let i = 0; i < n; i++){
+        console.log(i);
+    }
+}
+f2(10);
 
 
 
