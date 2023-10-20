@@ -118,6 +118,7 @@ cycle_ij(3);
 */
 
 
+/*
 function cycle1(n){
 
     // 0(n)
@@ -181,6 +182,38 @@ function cycle2(a, b, c){ // 0(a + b^2 + c^3)
     
 }
 cycle2(3);
+*/
+
+
+/*
+// O(log(a))
+function cycle1(a){
+
+    let sum = 0;
+ 
+    for (let i = 0; i < a; i++) {
+     let a = i;
+        while(a != 0){
+           sum += a % 10;
+           a = a / 10;
+           console.log(sum);
+          }
+    }
+ 
+    
+ }
+
+ cycle1(10);
+ */
+
+// O(sqrt(n))
+function sqrtCycle(n){
+
+    for (let i = 0; i < Math.sqrt(n); i++) {
+        console.log(i)
+    }
+}
+sqrtCycle(100);
 
 
 
